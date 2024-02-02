@@ -16,7 +16,7 @@ namespace Presentation.ActionFilters
         }
         public override void OnActionExecuting(ActionExecutingContext context)
         {
-            _logger.LogInfo(Log("OnActionExecuting", context.RouteData); // json dosyası elimizde olacak.
+            _logger.LogInfo(Log("OnActionExecuting", context.RouteData)); // json dosyası elimizde olacak.
         }
 
         private string Log(string modelName, RouteData routeData)

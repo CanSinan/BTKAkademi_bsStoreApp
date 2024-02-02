@@ -15,8 +15,8 @@ builder.Services.AddControllers(config =>
     config.RespectBrowserAcceptHeader = true; // Ýçerik Pazarlýðýna açýðýz
     config.ReturnHttpNotAcceptable = true;
 
-}).AddCustomCsvFormatter()
-    .AddXmlDataContractSerializerFormatters()
+})/*.AddCustomCsvFormatter()*/
+    //.AddXmlDataContractSerializerFormatters()
     .AddApplicationPart(typeof(Presentation.AssemblyRefence).Assembly)
     .AddNewtonsoftJson();
 
@@ -37,6 +37,7 @@ builder.Services.ConfigureServiceManager();
 builder.Services.ConfigureLoggerService();
 builder.Services.AddAutoMapper(typeof(Program));
 builder.Services.ConfigureActionFilters();
+builder.Services.ConfigureCors();
 
 
 var app = builder.Build();
@@ -54,6 +55,8 @@ if (app.Environment.IsProduction())
     app.UseHsts();
 }
 app.UseHttpsRedirection();
+
+app.UseCors("CorsPolicy");
 
 app.UseAuthorization();
 
