@@ -138,3 +138,39 @@
 2024-02-06 10:35:52.3777 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.8.2366. Product version: 5.2.8+f586f1341c46fa38aaaff4c641e7f0fa7e813943. GlobalAssemblyCache: False
 2024-02-06 10:35:52.3777 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=D:\MASAUSTU\2024-MASAUSTU\BTK-Akademi-AspNet_Core_Web_API\basics\bsStoreApp\WebApi\nlog.config
 2024-02-06 10:35:52.3912 Info Configuration initialized.
+2024-02-08 14:58:39.4912 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-02-08 14:58:39.5615 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.8.2366. Product version: 5.2.8+f586f1341c46fa38aaaff4c641e7f0fa7e813943. GlobalAssemblyCache: False
+2024-02-08 14:58:39.5720 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=D:\MASAUSTU\2024-MASAUSTU\BTK-Akademi-AspNet_Core_Web_API\basics\bsStoreApp\WebApi\nlog.config
+2024-02-08 14:58:39.5839 Info Configuration initialized.
+2024-02-08 15:00:58.8734 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-02-08 15:00:58.9042 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.8.2366. Product version: 5.2.8+f586f1341c46fa38aaaff4c641e7f0fa7e813943. GlobalAssemblyCache: False
+2024-02-08 15:00:58.9127 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=D:\MASAUSTU\2024-MASAUSTU\BTK-Akademi-AspNet_Core_Web_API\basics\bsStoreApp\WebApi\nlog.config
+2024-02-08 15:00:58.9127 Info Configuration initialized.
+2024-02-08 15:01:34.0917 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-02-08 15:01:34.1209 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.8.2366. Product version: 5.2.8+f586f1341c46fa38aaaff4c641e7f0fa7e813943. GlobalAssemblyCache: False
+2024-02-08 15:01:34.1314 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=D:\MASAUSTU\2024-MASAUSTU\BTK-Akademi-AspNet_Core_Web_API\basics\bsStoreApp\WebApi\nlog.config
+2024-02-08 15:01:34.1455 Info Configuration initialized.
+2024-02-08 15:02:10.6056 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-02-08 15:02:10.6329 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.8.2366. Product version: 5.2.8+f586f1341c46fa38aaaff4c641e7f0fa7e813943. GlobalAssemblyCache: False
+2024-02-08 15:02:10.6437 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=D:\MASAUSTU\2024-MASAUSTU\BTK-Akademi-AspNet_Core_Web_API\basics\bsStoreApp\WebApi\nlog.config
+2024-02-08 15:02:10.6437 Info Configuration initialized.
+2024-02-08 15:04:50.7385 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-02-08 15:04:50.7651 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.8.2366. Product version: 5.2.8+f586f1341c46fa38aaaff4c641e7f0fa7e813943. GlobalAssemblyCache: False
+2024-02-08 15:04:50.7765 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=D:\MASAUSTU\2024-MASAUSTU\BTK-Akademi-AspNet_Core_Web_API\basics\bsStoreApp\WebApi\nlog.config
+2024-02-08 15:04:50.7940 Info Configuration initialized.
+2024-02-08 15:08:23.4081 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-02-08 15:08:23.4327 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.8.2366. Product version: 5.2.8+f586f1341c46fa38aaaff4c641e7f0fa7e813943. GlobalAssemblyCache: False
+2024-02-08 15:08:23.4444 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=D:\MASAUSTU\2024-MASAUSTU\BTK-Akademi-AspNet_Core_Web_API\basics\bsStoreApp\WebApi\nlog.config
+2024-02-08 15:08:23.4577 Info Configuration initialized.
+2024-02-08 15:42:14.9812 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-02-08 15:42:15.0079 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.8.2366. Product version: 5.2.8+f586f1341c46fa38aaaff4c641e7f0fa7e813943. GlobalAssemblyCache: False
+2024-02-08 15:42:15.0079 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=D:\MASAUSTU\2024-MASAUSTU\BTK-Akademi-AspNet_Core_Web_API\basics\bsStoreApp\WebApi\nlog.config
+2024-02-08 15:42:15.0259 Info Configuration initialized.
+2024-02-08 15:45:22.9990 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-02-08 15:45:23.0240 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.8.2366. Product version: 5.2.8+f586f1341c46fa38aaaff4c641e7f0fa7e813943. GlobalAssemblyCache: False
+2024-02-08 15:45:23.0338 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=D:\MASAUSTU\2024-MASAUSTU\BTK-Akademi-AspNet_Core_Web_API\basics\bsStoreApp\WebApi\nlog.config
+2024-02-08 15:45:23.0338 Info Configuration initialized.
+2024-02-08 15:54:19.1986 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-02-08 15:54:19.2345 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.8.2366. Product version: 5.2.8+f586f1341c46fa38aaaff4c641e7f0fa7e813943. GlobalAssemblyCache: False
+2024-02-08 15:54:19.2463 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=D:\MASAUSTU\2024-MASAUSTU\BTK-Akademi-AspNet_Core_Web_API\basics\bsStoreApp\WebApi\nlog.config
+2024-02-08 15:54:19.2594 Info Configuration initialized.
