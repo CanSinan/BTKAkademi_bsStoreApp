@@ -30,9 +30,9 @@ namespace Presentation.Controllers
         }
 
         [HttpHead]
-        [HttpGet(Name ="GetAllBooksAsync")]
+        [HttpGet(Name = "GetAllBooksAsync")]
         [ServiceFilter(typeof(ValidateMediaTypeAttribute))]
-        public async Task<IActionResult> GetAllBooksAsync([FromQuery]BookParameters bookParameters) // Querystring üzerinden gelecek.
+        public async Task<IActionResult> GetAllBooksAsync([FromQuery] BookParameters bookParameters) // Querystring üzerinden gelecek.
         {
             var linkParameters = new LinkParameters()
             {
@@ -43,11 +43,11 @@ namespace Presentation.Controllers
                 .BookService
                 .GetAllBooksAsync(linkParameters, false);
 
-            Response.Headers.Add("X-Pagination", 
+            Response.Headers.Add("X-Pagination",
                 JsonSerializer.Serialize(result.metaData));
 
-            return result.linkResponse.HasLinks?
-                Ok(result.linkResponse.LinkedEntities): // link üretebildiysek link aksi taktirde şekillendirilmiş data döndüreceğiz.
+            return result.linkResponse.HasLinks ?
+                Ok(result.linkResponse.LinkedEntities) : // link üretebildiysek link aksi taktirde şekillendirilmiş data döndüreceğiz.
                 Ok(result.linkResponse.ShapedEntities);
         }
 
@@ -63,7 +63,7 @@ namespace Presentation.Controllers
         }
 
         [ServiceFilter(typeof(ValidationFilterAttribute))]
-        [HttpPost]
+        [HttpPost(Name = "CreateOneBookAsync")]
         public async Task<IActionResult> CreateOneBookAsync([FromBody] BookDtoForInsertion bookDto)
         {
 

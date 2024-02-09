@@ -63,6 +63,9 @@ namespace WebApi.Extensions
                 {
                     systemTexJsonOutputFormatter.SupportedMediaTypes
                     .Add("application/vnd.btkakademi.hateoas+json");
+
+                    systemTexJsonOutputFormatter.SupportedMediaTypes
+                    .Add("application/vnd.btkakademi.apiroot+json");
                 }
 
                 var xmlOutputFormatter = config
@@ -72,6 +75,9 @@ namespace WebApi.Extensions
                 {
                     xmlOutputFormatter.SupportedMediaTypes
                     .Add("application/vnd.btkakademi.hateoas+xml");
+
+                    xmlOutputFormatter.SupportedMediaTypes
+                    .Add("application/vnd.btkakademi.apiroot+xml");
                 }
             });
 
