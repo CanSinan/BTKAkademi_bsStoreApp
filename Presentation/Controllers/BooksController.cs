@@ -29,7 +29,8 @@ namespace Presentation.Controllers
             _mapper = mapper;
         }
 
-        [HttpGet]
+        [HttpHead]
+        [HttpGet(Name ="GetAllBooksAsync")]
         [ServiceFilter(typeof(ValidateMediaTypeAttribute))]
         public async Task<IActionResult> GetAllBooksAsync([FromQuery]BookParameters bookParameters) // Querystring üzerinden gelecek.
         {
@@ -110,6 +111,13 @@ namespace Presentation.Controllers
 
             return NoContent(); //204
 
+        }
+
+        [HttpOptions]
+        public IActionResult GetBooksOptions()
+        {
+            Response.Headers.Add("Allow", "GET, PUT, POST, PATCH, DELETE, HEAD, OPTIONS");
+            return Ok();
         }
     }
 }
