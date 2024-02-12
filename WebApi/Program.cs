@@ -42,7 +42,7 @@ builder.Services.ConfigureCors();
 builder.Services.ConfigureDataShaper();
 builder.Services.AddCustomMediaTypes();
 builder.Services.AddScoped<IBookLinks, BookLinks>();
-
+builder.Services.ConfigureVersioning();
 var app = builder.Build();
 
 var logger = app.Services.GetRequiredService<ILoggerService>();
