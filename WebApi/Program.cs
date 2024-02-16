@@ -16,7 +16,7 @@ builder.Services.AddControllers(config =>
 {
     config.RespectBrowserAcceptHeader = true; // Ýçerik Pazarlýðýna açýðýz
     config.ReturnHttpNotAcceptable = true;
-    config.CacheProfiles.Add("5mins", new CacheProfile() { Duration = 300});
+    config.CacheProfiles.Add("5mins", new CacheProfile() { Duration = 300 });
 })
     .AddXmlDataContractSerializerFormatters()
     .AddCustomCsvFormatter()
@@ -50,6 +50,8 @@ builder.Services.ConfigureHttpCacheHeaders();
 builder.Services.AddMemoryCache();
 builder.Services.ConfigureRateLimitingOptions();
 builder.Services.AddHttpContextAccessor();
+builder.Services.ConfigureIdentity();
+builder.Services.ConfigureJWT(builder.Configuration);
 
 var app = builder.Build();
 
@@ -72,6 +74,7 @@ app.UseCors("CorsPolicy");
 app.UseResponseCaching(); // Microsoft tarafýndan önerilen -- Cors tan sonra caching iþlemi yapýlmaslý
 app.UseHttpCacheHeaders();
 
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();
