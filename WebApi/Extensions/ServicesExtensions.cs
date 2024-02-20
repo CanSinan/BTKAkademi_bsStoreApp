@@ -16,7 +16,6 @@ using Repositories.Contracts;
 using Repositories.EFCore;
 using Services;
 using Services.Contracts;
-using System.Net.WebSockets;
 using System.Text;
 
 namespace WebApi.Extensions
@@ -197,17 +196,17 @@ namespace WebApi.Extensions
         {
             services.AddSwaggerGen(s =>
             {
-                s.SwaggerDoc("v1", new OpenApiInfo 
-                { 
-                    Title = "BTK Akademi", 
-                    Version = "v1" ,
-                    Description="BTK Akademi ASP.NET Core Web API",
-                    TermsOfService=new Uri("https://www.btkakademi.gov.tr"),
+                s.SwaggerDoc("v1", new OpenApiInfo
+                {
+                    Title = "BTK Akademi",
+                    Version = "v1",
+                    Description = "BTK Akademi ASP.NET Core Web API",
+                    TermsOfService = new Uri("https://www.btkakademi.gov.tr"),
                     Contact = new OpenApiContact
                     {
-                        Name="Sinan CAN",
+                        Name = "Sinan CAN",
                         Email = ".........@gmail.com",
-                        Url= new Uri("https://www.btkakademi.gov.tr")
+                        Url = new Uri("https://www.btkakademi.gov.tr")
                     }
                 });
                 s.SwaggerDoc("v2", new OpenApiInfo { Title = "BTK Akademi", Version = "v2" });
@@ -238,6 +237,19 @@ namespace WebApi.Extensions
                 });
             });
 
+        }
+
+        public static void RegisterRepositories(this IServiceCollection services)
+        {
+            services.AddScoped<IBookRepository, BookRepository>();
+            services.AddScoped<ICategoryRepository, CategoryRepository>();
+        }
+
+        public static void RegisterServices(this IServiceCollection services)
+        {
+            services.AddScoped<IBookService, BookManager>();
+            services.AddScoped<ICategoryService, CategoryManager>();
+            services.AddScoped<IAuthenticationService, AuthenticationManager>();
         }
     }
 }
