@@ -72,6 +72,14 @@ namespace Presentation.Controllers
             return Ok(book);
         }
 
+        [Authorize]
+        [HttpGet("details")]
+        public async Task<IActionResult> GetAllBooksWithDetailsAsync()
+        {
+            return Ok(await _manager.BookService.GetAllBooksWithDetailsAsync(false));
+        }
+
+
         [Authorize(Roles = "Editor, Admin")]
         [ServiceFilter(typeof(ValidationFilterAttribute))]
         [HttpPost(Name = "CreateOneBookAsync")]
@@ -85,7 +93,7 @@ namespace Presentation.Controllers
         }
 
 
-        [Authorize(Roles = "Editor, Admin")]
+        [Authorize(Roles = "Editor,Admin")]
         [ServiceFilter(typeof(ValidationFilterAttribute))]
         [HttpPut("{id}")]
         public async Task<IActionResult> UpdateOneBookAsync([FromRoute(Name = "id")] int id, [FromBody] BookDtoForUpdate bookDtobook)
